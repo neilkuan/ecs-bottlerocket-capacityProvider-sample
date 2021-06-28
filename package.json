@@ -1,5 +1,9 @@
 {
   "name": "ecs-Bottlerocket-cp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neilkuan/ecs-bottlerocket-capacityProvider-sample.git"
+  },
   "scripts": {
     "clobber": "npx projen clobber",
     "compile": "npx projen compile",
@@ -18,6 +22,11 @@
     "diff": "npx projen diff",
     "projen": "npx projen",
     "start": "npx projen start"
+  },
+  "author": {
+    "name": "Neil Kuan",
+    "email": "guan840912@gmail.com",
+    "organization": false
   },
   "devDependencies": {
     "@types/jest": "^26.0.23",

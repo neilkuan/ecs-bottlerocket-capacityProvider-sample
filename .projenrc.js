@@ -1,8 +1,21 @@
-const { AwsCdkTypeScriptApp } = require('projen');
+const { AwsCdkTypeScriptApp, DependenciesUpgradeMechanism } = require('projen');
 const project = new AwsCdkTypeScriptApp({
   cdkVersion: '1.110.0',
   defaultReleaseBranch: 'main',
   name: 'ecs-Bottlerocket-cp',
+  authorName: 'Neil Kuan',
+  authorEmail: 'guan840912@gmail.com',
+  repository: 'https://github.com/neilkuan/ecs-bottlerocket-capacityProvider-sample.git',
+  depsUpgrade: DependenciesUpgradeMechanism.githubWorkflow({
+    workflowOptions: {
+      labels: ['auto-approve'],
+      secret: 'AUTOMATION_GITHUB_TOKEN',
+    },
+  }),
+  autoApproveOptions: {
+    secret: 'GITHUB_TOKEN',
+    allowedUsernames: ['neilkuan'],
+  },
   cdkDependencies: [
     '@aws-cdk/core',
     '@aws-cdk/aws-ec2',
