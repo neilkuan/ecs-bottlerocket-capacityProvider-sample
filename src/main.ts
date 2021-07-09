@@ -7,10 +7,16 @@ import * as s3 from '@aws-cdk/aws-s3';
 
 import { App, Construct, RemovalPolicy, Stack, StackProps } from '@aws-cdk/core';
 
+export interface CPDemoStackProps extends StackProps {
+  isdefaultvpc?: boolean;
+};
+
 export class CPDemo extends Stack {
-  constructor(scope: Construct, id: string, props: StackProps = {}) {
+  readonly vpc: ec2.IVpc;
+  constructor(scope: Construct, id: string, props?: CPDemoStackProps ) {
     super(scope, id, props);
-    const vpc = ec2.Vpc.fromLookup(this, 'defVpc', { isDefault: true });
+    this.vpc = props?.isdefaultvpc ? ec2.Vpc.fromLookup(this, 'defVpc', { isDefault: true }) : new ec2.Vpc(this, 'newVpc', { natGateways: 1, maxAzs: 3 });
+    const vpc = this.vpc;
     const autoScalingGroup = new autoscaling.AutoScalingGroup(this, 'ASG', {
       vpc,
       // 1 vcpu , 1GB  to demo.
@@ -74,7 +80,7 @@ const devEnv = {
 
 const app = new App();
 
-new CPDemo(app, 'my-stack-dev', { env: devEnv });
+new CPDemo(app, 'my-stack-dev', { env: devEnv, isdefaultvpc: false });
 // new MyStack(app, 'my-stack-prod', { env: prodEnv });
 
 app.synth();
