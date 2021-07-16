@@ -56,7 +56,7 @@ export class CPDemo extends Stack {
       memoryLimitMiB: 600,
       image: ecs.ContainerImage.fromRegistry('public.ecr.aws/ubuntu/nginx:latest'),
     });
-    new ecs.Ec2Service(this, 'testNginx', {
+    const svc = new ecs.Ec2Service(this, 'testNginx', {
       taskDefinition,
       cluster: ecsC,
       desiredCount: 1,
@@ -68,7 +68,7 @@ export class CPDemo extends Stack {
         },
       ],
     });
-
+    svc.node.addDependency(this.node.tryFindChild('tryEcsEc2AutoScalingCluster') as ecs.CfnClusterCapacityProviderAssociations);
   }
 }
 

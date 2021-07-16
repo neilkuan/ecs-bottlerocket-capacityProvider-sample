@@ -1,6 +1,6 @@
 const { AwsCdkTypeScriptApp, DependenciesUpgradeMechanism } = require('projen');
 const project = new AwsCdkTypeScriptApp({
-  cdkVersion: '1.110.0',
+  cdkVersion: '1.114.0',
   defaultReleaseBranch: 'main',
   name: 'ecs-Bottlerocket-cp',
   authorName: 'Neil Kuan',
