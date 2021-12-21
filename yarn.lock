@@ -1360,9 +1360,9 @@
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
 "@types/node@*":
-  version "17.0.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.1.tgz#88d501e84b6185f6489ecee4ba9e8fcec7f29bb2"
-  integrity sha512-NXKvBVUzIbs6ylBwmOwHFkZS2EXCcjnqr8ZCRNaXBkHAf+3mn/rPcJxwrzuc6movh8fxQAsUUfYklJ/EG+hZqQ==
+  version "17.0.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.2.tgz#a4c07d47ff737e8ee7e586fe636ff0e1ddff070a"
+  integrity sha512-JepeIUPFDARgIs0zD/SKPgFsJEAF0X5/qO80llx59gOxFTboS9Amv3S+QfB7lqBId5sFXJ99BN0J6zFRvL9dDA==
 
 "@types/node@^10.17.0", "@types/node@^10.17.60":
   version "10.17.60"
@@ -1766,9 +1766,9 @@ aws-cdk@^1.114.0:
     yargs "^16.2.0"
 
 aws-sdk@^2.848.0, aws-sdk@^2.979.0:
-  version "2.1046.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1046.0.tgz#9147b0fa1c86acbebd1a061e951ab5012f4499d7"
-  integrity sha512-ocwHclMXdIA+NWocUyvp9Ild3/zy2vr5mHp3mTyodf0WU5lzBE8PocCVLSWhMAXLxyia83xv2y5f5AzAcetbqA==
+  version "2.1047.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1047.0.tgz#a3b1fc3280245b2b66847c558db4dd2641573f23"
+  integrity sha512-aZg6HzcwgRpXLi8HnpwBwK+NTXlWPjLSChvdeJ+/IE9912aoAKyaV+Ydo+9h6XH0cQhkvZ2u3pFINWZVbwo+TA==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -2262,9 +2262,9 @@ console-control-strings@^1.0.0, console-control-strings@~1.1.0:
   integrity sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=
 
 constructs@^3.3.69:
-  version "3.3.167"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.167.tgz#0aa84ca146976952eb0f7ac1aeaccbdbfdb4b7ad"
-  integrity sha512-yKat/bVJRfqqDGFAZr+DXKkfXfDoHaz+QNREAsFfsBqHUV/TFYVT+GSU/aSSddiW8wjfBT3tY1+3Ubcn77FOKQ==
+  version "3.3.168"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.168.tgz#1dd69772b4c12822eb5380e614e8e3a95d94b682"
+  integrity sha512-9DwVLINNDwzZ5sbzYZ1SZNck43T4BzM4Qua0TGLTdgNZXshW+Q9/93jsKCp3cvuG6Y5ReMby84K9WsEfwiWHKw==
 
 convert-source-map@^1.4.0, convert-source-map@^1.6.0, convert-source-map@^1.7.0:
   version "1.8.0"
@@ -4310,9 +4310,9 @@ json-buffer@3.0.0:
   integrity sha1-Wx85evx11ne96Lz8Dkfh+aPZqJg=
 
 json-diff@^0.5.4:
-  version "0.5.4"
-  resolved "https://registry.yarnpkg.com/json-diff/-/json-diff-0.5.4.tgz#7bc8198c441756632aab66c7d9189d365a7a035a"
-  integrity sha512-q5Xmx9QXNOzOzIlMoYtLrLiu4Jl/Ce2bn0CNcv54PhyH89CI4GWlGVDye8ei2Ijt9R3U+vsWPsXpLUNob8bs8Q==
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/json-diff/-/json-diff-0.5.5.tgz#24658ad200dbdd64ae8a56baf4d87b2b33d7196e"
+  integrity sha512-B2RSfPv8Y5iqm6/9aKC3cOhXPzjYupKDpGuqT5py9NRulL8J0UoB/zKXUo70xBsuxPcIFgtsGgEdXLrNp0GL7w==
   dependencies:
     cli-color "~0.1.6"
     difflib "~0.2.1"
