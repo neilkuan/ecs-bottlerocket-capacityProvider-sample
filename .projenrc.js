@@ -26,5 +26,9 @@ const project = new awscdk.AwsCdkTypeScriptApp({
     '@aws-cdk/aws-autoscaling',
   ],
   gitignore: ['cdk.context.json'],
+  typescriptVersion: '4.6',
+  devDeps: [
+    '@types/prettier@2.6.0',
+  ],
 });
 project.synth();
