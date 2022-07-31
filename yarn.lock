@@ -1404,9 +1404,9 @@
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
 "@types/node@*":
-  version "18.6.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.6.2.tgz#ffc5f0f099d27887c8d9067b54e55090fcd54126"
-  integrity sha512-KcfkBq9H4PI6Vpu5B/KoPeuVDAbmi+2mDBqGPGUgoL7yXQtcWGu2vJWmmRkneWK3Rh0nIAX192Aa87AqKHYChQ==
+  version "18.6.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.6.3.tgz#4e4a95b6fe44014563ceb514b2598b3e623d1c98"
+  integrity sha512-6qKpDtoaYLM+5+AFChLhHermMQxc3TOEFIDzrZLPRGHPrLEwqFkkT5Kx3ju05g6X7uDPazz3jHbKPX0KzCjntg==
 
 "@types/node@^10.17.60":
   version "10.17.60"
@@ -2115,9 +2115,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^3.2.27, constructs@^3.3.69:
-  version "3.4.53"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.4.53.tgz#7577d4271049a11c6aacf16976d89b831e39a379"
-  integrity sha512-IAJFLeNWVBgGmX3dkJ5GeJB6ZuVAw+Eutq9ZpujuyynbH/9AjW4P9vgtQFNB9SIKTn2gjFooNqPLwD0t9ZaBBg==
+  version "3.4.54"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.4.54.tgz#855e3b7bc37ee3f20e226b4d04b99f84cbadf95b"
+  integrity sha512-KzwmO+3lcM8J1DGWfH/2FTSG23Tz9w+QnIn8wnU53q/8XLrs84QkptzmO2M1soTndknDyb3ofCHYtDz2IlHy8Q==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
