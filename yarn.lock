@@ -2137,9 +2137,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^3.2.27, constructs@^3.3.69:
-  version "3.4.119"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.4.119.tgz#8999b68f9cbc688200f46563e5b692c44b3c2354"
-  integrity sha512-mKRgk+GESqDpakbAThqeswSz4zrB4+W4KrMQr+wt4GalP0oV+RAfm6vhI8iYMZXmNeX2er02A1tChL6bsqvDsA==
+  version "3.4.120"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.4.120.tgz#99718fdc54b367547b91f51397667f9bc663f6a2"
+  integrity sha512-76en501pjPM46I5DpvvZZdCJAU+BAc277GRO5gld39Dq+WXClVGYLrcfUN2aCeW8YZHryWxzDLr4Q6ARRuKPyQ==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
@@ -2348,9 +2348,9 @@ duplexer3@^0.1.4:
   integrity sha512-1A8za6ws41LQgv9HrE/66jyC5yuSjQ3L/KOpFtoBilsAK2iA2wuS5rTt1OCzIvtS2V7nVmedsUU+DGRcjBmOYA==
 
 electron-to-chromium@^1.4.251:
-  version "1.4.276"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.276.tgz#17837b19dafcc43aba885c4689358b298c19b520"
-  integrity sha512-EpuHPqu8YhonqLBXHoU6hDJCD98FCe6KDoet3/gY1qsQ6usjJoHqBH2YIVs8FXaAtHwVL8Uqa/fsYao/vq9VWQ==
+  version "1.4.278"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.278.tgz#b527a64df8a23dd46a8c751a81c6648d528c5e1d"
+  integrity sha512-i+0+t/UVCqp9khP+hswZQbG31LnsYWGwyI9zhqZkyPok7k57W0UhMaxODMp3TeoNFhyUtB5OI4ppO/OSD9gaYg==
 
 emittery@^0.8.1:
   version "0.8.1"
@@ -4384,9 +4384,9 @@ minimatch@^5.0.1:
     brace-expansion "^2.0.1"
 
 minimist@^1.2.0, minimist@^1.2.6:
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
-  integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.7.tgz#daa1c4d91f507390437c6a8bc01078e7000c4d18"
+  integrity sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==
 
 minimist@^1.2.3:
   version "1.2.5"
@@ -4486,9 +4486,9 @@ negotiator@^0.6.3:
   integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
 
 node-gyp@^9.0.0:
-  version "9.2.0"
-  resolved "https://registry.yarnpkg.com/node-gyp/-/node-gyp-9.2.0.tgz#b3b56144828a98018a4cfb3033095e0f5b874d72"
-  integrity sha512-/+/YxGfIJOh/fnMsr4Ep0v6oOIjnO1BgLd2dcDspBX1spTkQU7xSIox5RdRE/2/Uq3ZwK8Z5swRIbMUmPlslmg==
+  version "9.3.0"
+  resolved "https://registry.yarnpkg.com/node-gyp/-/node-gyp-9.3.0.tgz#f8eefe77f0ad8edb3b3b898409b53e697642b319"
+  integrity sha512-A6rJWfXFz7TQNjpldJ915WFb1LnhO4lIve3ANPbWreuEoLoKlFT3sxIepPBkLhM27crW8YmN+pjlgbasH6cH/Q==
   dependencies:
     env-paths "^2.2.0"
     glob "^7.1.4"
