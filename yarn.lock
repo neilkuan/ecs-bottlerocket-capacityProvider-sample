@@ -1425,9 +1425,9 @@
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
 "@types/node@*":
-  version "18.11.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.5.tgz#1bc94cf2f9ab5fe33353bc7c79c797dcc5325bef"
-  integrity sha512-3JRwhbjI+cHLAkUorhf8RnqUbFXajvzX4q6fMn5JwkgtuwfYtRQYI3u4V92vI6NJuTsbBQWWh3RZjFsuevyMGQ==
+  version "18.11.7"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.7.tgz#8ccef136f240770c1379d50100796a6952f01f94"
+  integrity sha512-LhFTglglr63mNXUSRYD8A+ZAIu5sFqNJ4Y2fPuY7UlrySJH87rRRlhtVmMHplmfk5WkoJGmDjE9oiTfyX94CpQ==
 
 "@types/node@^10.17.60":
   version "10.17.60"
@@ -1450,9 +1450,9 @@
   integrity sha512-ri0UmynRRvZiiUJdiz38MmIblKK+oH30MztdBVR95dv/Ubw6neWSb8u1XpRb72L4qsZOhz+L+z9JD40SJmfWow==
 
 "@types/semver@^7.3.12":
-  version "7.3.12"
-  resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.3.12.tgz#920447fdd78d76b19de0438b7f60df3c4a80bf1c"
-  integrity sha512-WwA1MW0++RfXmCr12xeYOOC5baSC9mSb0ZqCquFzKhcoF4TvHu5MKOuXsncgZcpVFhB1pXd5hZmM0ryAoCp12A==
+  version "7.3.13"
+  resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.3.13.tgz#da4bfd73f49bd541d28920ab0e2bf0ee80f71c91"
+  integrity sha512-21cFJr9z3g5dW8B0CVI9g2O9beqaThGQ6ZFBqHfwhzLDKUxaqTIy3vnfah/UPkfOiF2pLq+tGz+W8RyCskuslw==
 
 "@types/stack-utils@^2.0.0":
   version "2.0.1"
@@ -2143,9 +2143,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^3.2.27, constructs@^3.3.69:
-  version "3.4.134"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.4.134.tgz#a2ae71207b239a95d76c489abc5c408a4e17fae5"
-  integrity sha512-ICQ6jlH9cAADlxsGbCc4PnX0GTvCo0afAqzP/cqwDd16nkOMmQztAkCYBYaVMIZirNv976s2zaQBLfgz1BQb1g==
+  version "3.4.135"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.4.135.tgz#13f297f2cd6891354a911484c9286a82774757df"
+  integrity sha512-L5o3yxvrHTczhXj3gUIibaxpZsWlMoDXvozwXoULJNSST9wpNjvT+Z7lB3DY9zN3VqKEKB6hSeW0Ks5B9M89Mw==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
@@ -3196,9 +3196,9 @@ has@^1.0.3:
     function-bind "^1.1.1"
 
 hosted-git-info@^5.0.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-5.1.0.tgz#9786123f92ef3627f24abc3f15c20d98ec4a6594"
-  integrity sha512-Ek+QmMEqZF8XrbFdwoDjSbm7rT23pCgEMOJmz6GPk/s4yH//RQfNPArhIxbguNxROq/+5lNBwCDHMhA903Kx1Q==
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-5.2.0.tgz#744defae076ebf05c19e38ea0f8788f2750e92df"
+  integrity sha512-y5aljBDICf0OFQecausUdWGZbLxSaFc012tdP4xe4GcFMeYUrOptSGaTZ21gvIsPUSe1/K9EVKLYwBOSEOPirw==
   dependencies:
     lru-cache "^7.5.1"
 
