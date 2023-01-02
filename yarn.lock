@@ -2245,9 +2245,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^3.2.27, constructs@^3.3.69:
-  version "3.4.200"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.4.200.tgz#10ff02e664fba9451a3c115c6bffb8c12a4fa626"
-  integrity sha512-XXGiCt3pRGQn1PNLItlC9fFfPOoXQP+B7zPmo3Zjs4EgoIIYjCZN1E50Up0GMLCZGy6BqKImklW9aNI85VMgXw==
+  version "3.4.201"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.4.201.tgz#02989429838031bbd4ea8dadcdfb178e1bcddc4a"
+  integrity sha512-v6n+YWHSzbg83gS8E93vTXZUvFxRl2J6vgmoUH329KjFdB37g3TEN0E8uT2NbXyA5reHbOaePgAyLaXGmrdz9Q==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
@@ -2841,9 +2841,9 @@ fast-memoize@^2.5.2:
   integrity sha512-Ue0LwpDYErFbmNnZSF0UH6eImUwDmogUO1jyE+JbN2gsQz/jICm1Ve7t9QT0rNSsfJt+Hs4/S3GnsDVjL4HVrw==
 
 fastq@^1.6.0:
-  version "1.14.0"
-  resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.14.0.tgz#107f69d7295b11e0fccc264e1fc6389f623731ce"
-  integrity sha512-eR2D+V9/ExcbF9ls441yIuN6TI2ED1Y2ZcA5BmMtJsOkWOFRJQ0Jt0g1UwqXJJVAb+V+umH5Dfr8oh4EVP7VVg==
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.15.0.tgz#d04d07c6a2a68fe4599fea8d2e103a937fae6b3a"
+  integrity sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==
   dependencies:
     reusify "^1.0.4"
 
