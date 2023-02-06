@@ -2261,9 +2261,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^3.2.27, constructs@^3.3.69:
-  version "3.4.235"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.4.235.tgz#b3961310706ab1f48da540f8c5e98db6a7950561"
-  integrity sha512-LAxppOMrRKvgRWde9iJREYXYaNH295FCs1Wkj2bNxA8qlWnSm2Os34N1LABu6j5iSLbH1gTXDpteSHzpsQoQGA==
+  version "3.4.236"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.4.236.tgz#7bfa01be941107bb0cd8f0ec0edd2d3520327eb7"
+  integrity sha512-DvzPLKReM02O5g5dDdNYuGfQj+MZnLImZHxHbPZNjH9iN8aMT22XiGObnUvZfsW8OGJb1FDSQH496KglwJspKg==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
@@ -4540,9 +4540,9 @@ minipass@^3.0.0, minipass@^3.1.1, minipass@^3.1.6:
     yallist "^4.0.0"
 
 minipass@^4.0.0:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/minipass/-/minipass-4.0.1.tgz#2b9408c6e81bb8b338d600fb3685e375a370a057"
-  integrity sha512-V9esFpNbK0arbN3fm2sxDKqMYgIp7XtVdE4Esj+PE4Qaaxdg1wIw48ITQIOn1sc8xXSmUviVL3cyjMqPlrVkiA==
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/minipass/-/minipass-4.0.2.tgz#26fc3364d5ea6cb971c6e5259eac67a0887510d1"
+  integrity sha512-4Hbzei7ZyBp+1aw0874YWpKOubZd/jc53/XU+gkYry1QV+VvrbO8icLM5CUtm4F0hyXn85DXYKEMIS26gitD3A==
 
 minizlib@^2.1.1, minizlib@^2.1.2:
   version "2.1.2"
