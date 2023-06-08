@@ -2284,9 +2284,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^3.2.27, constructs@^3.3.69:
-  version "3.4.318"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.4.318.tgz#45f9aa6aeca1aa40364abda1027f983012a90732"
-  integrity sha512-7V1sFnlSlgLWZw55YvGsYTQU9ug0js775uaEMaLLZDSO54RNrswVyik93VPChJw2/yKoP1f/ON2KxtZKbcQQCw==
+  version "3.4.319"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.4.319.tgz#4f2cad018ccac320e9f0087de4d2ac1af76c062c"
+  integrity sha512-jeP5z9g2g178wH85NdymS94tYS8szoFi7Z95XIgThWxp9ayvZHSc3lQAnNRezc14zWSaGIz+E78rYDz9ms1v1Q==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
@@ -2488,9 +2488,9 @@ duplexer3@^0.1.4:
   integrity sha512-1A8za6ws41LQgv9HrE/66jyC5yuSjQ3L/KOpFtoBilsAK2iA2wuS5rTt1OCzIvtS2V7nVmedsUU+DGRcjBmOYA==
 
 electron-to-chromium@^1.4.411:
-  version "1.4.422"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.422.tgz#b04d0a209889f46858a4ab05f737fb81b99fec91"
-  integrity sha512-OQMid0IRbJv27BhlPiBK8CfGzjeq4ZCBSmpwNi1abyS8w17/BajOUu7hBI49ptDTBCz9NRFbORhWvt41dF7dwg==
+  version "1.4.425"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.425.tgz#399df13091b836d28283a545c25c8e4d9da86da8"
+  integrity sha512-wv1NufHxu11zfDbY4fglYQApMswleE9FL/DSeyOyauVXDZ+Kco96JK/tPfBUaDqfRarYp2WH2hJ/5UnVywp9Jg==
 
 emittery@^0.8.1:
   version "0.8.1"
