@@ -34,14 +34,12 @@
     "organization": false
   },
   "devDependencies": {
-    "@aws-cdk/assert": "^1.114.0",
-    "@aws-cdk/assertions": "^1.114.0",
     "@types/jest": "^26.0.24",
     "@types/node": "^12",
     "@types/prettier": "2.6.0",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "aws-cdk": "^1.114.0",
+    "aws-cdk": "^2.96.2",
     "esbuild": "^0.19.3",
     "eslint": "^8",
     "eslint-import-resolver-node": "^0.3.9",
@@ -57,15 +55,8 @@
     "typescript": "4.6"
   },
   "dependencies": {
-    "@aws-cdk/aws-autoscaling": "^1.114.0",
-    "@aws-cdk/aws-ec2": "^1.114.0",
-    "@aws-cdk/aws-ecs": "^1.114.0",
-    "@aws-cdk/aws-iam": "^1.114.0",
-    "@aws-cdk/aws-kms": "^1.114.0",
-    "@aws-cdk/aws-logs": "^1.114.0",
-    "@aws-cdk/aws-s3": "^1.114.0",
-    "@aws-cdk/core": "^1.114.0",
-    "constructs": "^3.2.27"
+    "aws-cdk-lib": "^2.96.2",
+    "constructs": "^10.0.5"
   },
   "license": "Apache-2.0",
   "version": "0.0.0",

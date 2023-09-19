@@ -1,6 +1,6 @@
 const { awscdk } = require('projen');
 const project = new awscdk.AwsCdkTypeScriptApp({
-  cdkVersion: '1.114.0',
+  cdkVersion: '2.96.2',
   defaultReleaseBranch: 'main',
   name: 'ecs-Bottlerocket-cp',
   authorName: 'Neil Kuan',
@@ -15,15 +15,8 @@ const project = new awscdk.AwsCdkTypeScriptApp({
     secret: 'GITHUB_TOKEN',
     allowedUsernames: ['neilkuan'],
   },
-  cdkDependencies: [
-    '@aws-cdk/core',
-    '@aws-cdk/aws-ec2',
-    '@aws-cdk/aws-ecs',
-    '@aws-cdk/aws-iam',
-    '@aws-cdk/aws-s3',
-    '@aws-cdk/aws-kms',
-    '@aws-cdk/aws-logs',
-    '@aws-cdk/aws-autoscaling',
+  deps: [
+    'constructs',
   ],
   gitignore: ['cdk.context.json'],
   typescriptVersion: '4.6',

@@ -1,11 +1,12 @@
-import * as autoscaling from '@aws-cdk/aws-autoscaling';
-import * as ec2 from '@aws-cdk/aws-ec2';
-import * as ecs from '@aws-cdk/aws-ecs';
-import * as kms from '@aws-cdk/aws-kms';
-import * as logs from '@aws-cdk/aws-logs';
-import * as s3 from '@aws-cdk/aws-s3';
+import * as autoscaling from 'aws-cdk-lib/aws-autoscaling';
+import * as ec2 from 'aws-cdk-lib/aws-ec2';
+import * as ecs from 'aws-cdk-lib/aws-ecs';
+import * as kms from 'aws-cdk-lib/aws-kms';
+import * as logs from 'aws-cdk-lib/aws-logs';
+import * as s3 from 'aws-cdk-lib/aws-s3';
 
-import { App, Construct, RemovalPolicy, Stack, StackProps } from '@aws-cdk/core';
+import { App, RemovalPolicy, Stack, StackProps } from 'aws-cdk-lib/core';
+import { Construct } from 'constructs';
 
 export interface CPDemoStackProps extends StackProps {
   isdefaultvpc?: boolean;
@@ -80,7 +81,6 @@ const devEnv = {
 
 const app = new App();
 
-new CPDemo(app, 'my-stack-dev', { env: devEnv, isdefaultvpc: false });
-// new MyStack(app, 'my-stack-prod', { env: prodEnv });
+new CPDemo(app, 'my-stack-dev-bottlerocket', { env: devEnv, isdefaultvpc: false });
 
 app.synth();
