@@ -1330,9 +1330,9 @@ available-typed-arrays@^1.0.7:
     possible-typed-array-names "^1.0.0"
 
 aws-cdk-lib@^2.96.2:
-  version "2.142.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.142.0.tgz#afae300bfb67d6f7491a603660ab85ede464b384"
-  integrity sha512-WQc+1jk6mC3QrJnWyvZCmjQHcBcsrhSP3rCqLVvDcjOiZIvCRUHXDtkVmB5iUgaf2RhPu15sPwYegkCPpa7afQ==
+  version "2.142.1"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.142.1.tgz#aa5f4789f55d549d50337e4aec0272ddd9a8acf9"
+  integrity sha512-xs4NRoml5/Zh30YHSk/Wwmr7VcZOZHyIInuBye3gC/BYwCh1lsUe9/ChWIeLUCRhUrELd5npyoBOJiHb3ql7Rg==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "^2.2.202"
     "@aws-cdk/asset-kubectl-v20" "^2.1.2"
@@ -1350,9 +1350,9 @@ aws-cdk-lib@^2.96.2:
     yaml "1.10.2"
 
 aws-cdk@^2.96.2:
-  version "2.142.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.142.0.tgz#36a88d3e89b462d981b0b1e65a6bfa37220d1e28"
-  integrity sha512-vrEO02gY2G+38GIbYpYyR9/+KZV2ZE0MgGG3a515IkU6lHU3CkebxIgsmO4gHwFXNsePwcnAq3HQXhCS8SfXmw==
+  version "2.142.1"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.142.1.tgz#4d4c2b38a8a05ffc701feccd69f920419f0189e5"
+  integrity sha512-1ENZ2TY5/4uoPXat7vIzZIATdFGLy0UuqFeFU0AB/YFQqfTuSgsZRKYphpOi0zhcoDQ4rc8rPr/Dud+ZxXSc9Q==
   optionalDependencies:
     fsevents "2.3.2"
 
@@ -1962,9 +1962,9 @@ duplexer3@^0.1.4:
   integrity sha512-1A8za6ws41LQgv9HrE/66jyC5yuSjQ3L/KOpFtoBilsAK2iA2wuS5rTt1OCzIvtS2V7nVmedsUU+DGRcjBmOYA==
 
 electron-to-chromium@^1.4.668:
-  version "1.4.773"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.773.tgz#49741af9bb4e712ad899e35d8344d8d59cdb7e12"
-  integrity sha512-87eHF+h3PlCRwbxVEAw9KtK3v7lWfc/sUDr0W76955AdYTG4bV/k0zrl585Qnj/skRMH2qOSiE+kqMeOQ+LOpw==
+  version "1.4.774"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.774.tgz#1017d1758aaeeefe5423aa9d67b4b1e5d1d0a856"
+  integrity sha512-132O1XCd7zcTkzS3FgkAzKmnBuNJjK8WjcTtNuoylj7MYbqw5eXehjQ5OK91g0zm7OTKIPeaAG4CPoRfD9M1Mg==
 
 emittery@^0.8.1:
   version "0.8.1"
