@@ -26,9 +26,9 @@
   integrity sha512-twhuEG+JPOYCYPx/xy5uH2+VUsIEhPTzDY0F1KuB+ocjWWB/KEDiOVL19nHvbPCB6fhWnkykXEMJ4HHcKvjtvg==
 
 "@aws-cdk/cloud-assembly-schema@^36.0.5":
-  version "36.0.23"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-36.0.23.tgz#6fadfe2b58cae426b3f2d2318e9fa92e22cb6bba"
-  integrity sha512-47gdj34MvEGG/Ewlx20Qs+HhJU4+b3rhttFuxeqxKZAiqCERYS+cCgQDdUhaeq+130v52n0g2+riPJ9AFI2ERg==
+  version "36.0.24"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-36.0.24.tgz#f6f05615223e800771ca99c88ad631c32b33d642"
+  integrity sha512-dHyb4lvd6nbNHLVvdyxVPgwc0MyzN3VzIJnWwGJWKOIwVqL7hvU2NkQQrktY9T2MtdhzUdDFm9qluxuLRV5Cfw==
   dependencies:
     jsonschema "^1.4.1"
     semver "^7.6.3"
@@ -4551,9 +4551,9 @@ path-type@^4.0.0:
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
 picocolors@^1.0.0, picocolors@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.1.tgz#a8ad579b571952f0e5d25892de5445bcfe25aaa1"
-  integrity sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.1.0.tgz#5358b76a78cde483ba5cef6a9dc9671440b27d59"
+  integrity sha512-TQ92mBOW0l3LeMeyLV6mzy/kWr8lkd/hp3mTg7wYK7zJhuBStmGMBG0BdeDZS/dZx1IukaX6Bk11zcln25o1Aw==
 
 picomatch@^2.0.4, picomatch@^2.2.3, picomatch@^2.3.1:
   version "2.3.1"
