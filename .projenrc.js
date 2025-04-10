@@ -1,6 +1,6 @@
 const { awscdk } = require('projen');
 const project = new awscdk.AwsCdkTypeScriptApp({
-  cdkVersion: '2.96.2',
+  cdkVersion: '2.181.0',
   defaultReleaseBranch: 'main',
   name: 'ecs-Bottlerocket-cp',
   authorName: 'Neil Kuan',
@@ -23,5 +23,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   devDeps: [
     '@types/prettier@2.6.0',
   ],
+  workflowNodeVersion: '^20',
+  minNodeVersion: '^20',
 });
 project.synth();

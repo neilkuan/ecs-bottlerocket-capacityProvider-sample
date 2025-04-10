@@ -11,7 +11,7 @@
     },
     {
       "name": "@types/node",
-      "version": "ts4.6",
+      "version": "^20",
       "type": "build"
     },
     {
@@ -79,7 +79,7 @@
     },
     {
       "name": "aws-cdk-lib",
-      "version": "^2.96.2",
+      "version": "^2.181.0",
       "type": "runtime"
     },
     {

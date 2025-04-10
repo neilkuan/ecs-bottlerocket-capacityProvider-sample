@@ -1,11 +1,12 @@
 import * as autoscaling from 'aws-cdk-lib/aws-autoscaling';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as ecs from 'aws-cdk-lib/aws-ecs';
-import * as kms from 'aws-cdk-lib/aws-kms';
-import * as logs from 'aws-cdk-lib/aws-logs';
-import * as s3 from 'aws-cdk-lib/aws-s3';
+import * as iam from 'aws-cdk-lib/aws-iam';
+// import * as kms from 'aws-cdk-lib/aws-kms';
+// import * as logs from 'aws-cdk-lib/aws-logs';
+// import * as s3 from 'aws-cdk-lib/aws-s3';
 
-import { App, RemovalPolicy, Stack, StackProps } from 'aws-cdk-lib/core';
+import { App, Stack, StackProps } from 'aws-cdk-lib/core';
 import { Construct } from 'constructs';
 
 export interface CPDemoStackProps extends StackProps {
@@ -18,30 +19,41 @@ export class CPDemo extends Stack {
     super(scope, id, props);
     this.vpc = props?.isdefaultvpc ? ec2.Vpc.fromLookup(this, 'defVpc', { isDefault: true }) : new ec2.Vpc(this, 'newVpc', { natGateways: 1, maxAzs: 3 });
     const vpc = this.vpc;
+    const ec2Role = new iam.Role(this, 'InstanceProfile', {
+          assumedBy: new iam.ServicePrincipal('ec2.amazonaws.com'),
+        });
     const autoScalingGroup = new autoscaling.AutoScalingGroup(this, 'ASG', {
       vpc,
-      // 1 vcpu , 1GB  to demo.
-      instanceType: new ec2.InstanceType('t2.micro'),
-      machineImage: new ecs.BottleRocketImage(),
       minCapacity: 0,
       maxCapacity: 100,
       desiredCapacity: 1,
-      associatePublicIpAddress: true,
       vpcSubnets: { subnetType: ec2.SubnetType.PUBLIC },
+      launchTemplate: new ec2.LaunchTemplate(this, 'LaunchTemplate', {
+        instanceType: new ec2.InstanceType('t2.micro'),
+        machineImage: new ecs.BottleRocketImage(),
+        associatePublicIpAddress: true,
+        userData: ec2.UserData.forLinux(),
+        role: ec2Role,
+        securityGroup: new ec2.SecurityGroup(this, 'SecurityGroup', {
+          vpc,
+          allowAllOutbound: true,
+        }),
+        httpPutResponseHopLimit: 2,
+        httpTokens: ec2.LaunchTemplateHttpTokens.REQUIRED,
+      }),
     });
-
     const ecsC = new ecs.Cluster(this, 'tryEcsEc2AutoScalingCluster', {
       clusterName: 'Ec2AutoScalingCluster',
       vpc,
-      executeCommandConfiguration: {
-        kmsKey: new kms.Key(this, 'CPdemokey'),
-        logConfiguration: {
-          cloudWatchLogGroup: new logs.LogGroup(this, 'CPdemologGroup', { logGroupName: 'CPdemologGroup' }),
-          s3Bucket: new s3.Bucket(this, 'CPdemobucket', { removalPolicy: RemovalPolicy.DESTROY, autoDeleteObjects: true }),
-          s3KeyPrefix: 'ecs-exec-logs',
-        },
-        logging: ecs.ExecuteCommandLogging.OVERRIDE,
-      },
+      // executeCommandConfiguration: {
+      //   kmsKey: new kms.Key(this, 'CPdemokey'),
+      //   logConfiguration: {
+      //     cloudWatchLogGroup: new logs.LogGroup(this, 'CPdemologGroup', { logGroupName: 'CPdemologGroup' }),
+      //     s3Bucket: new s3.Bucket(this, 'CPdemobucket', { removalPolicy: RemovalPolicy.DESTROY, autoDeleteObjects: true }),
+      //     s3KeyPrefix: 'ecs-exec-logs',
+      //   },
+      //   logging: ecs.ExecuteCommandLogging.OVERRIDE,
+      // },
     });
     const capacityProvider = new ecs.AsgCapacityProvider(this, 'AsgCapacityProvider', { autoScalingGroup, machineImageType: ecs.MachineImageType.BOTTLEROCKET });
 
@@ -52,9 +64,8 @@ export class CPDemo extends Stack {
     const taskDefinition = new ecs.Ec2TaskDefinition(this, 'testNginxTD');
     taskDefinition.addContainer('testNginxC', {
       // let task desiredCount 2 need 2 nodes.
-      cpu: 600,
-      memoryReservationMiB: 512,
-      memoryLimitMiB: 600,
+      cpu: 250,
+      memoryReservationMiB: 256,
       image: ecs.ContainerImage.fromRegistry('public.ecr.aws/ubuntu/nginx:latest'),
     });
     const svc = new ecs.Ec2Service(this, 'testNginx', {
@@ -68,7 +79,9 @@ export class CPDemo extends Stack {
           weight: 1,
         },
       ],
+      enableExecuteCommand: true,
     });
+    ec2Role.addManagedPolicy(iam.ManagedPolicy.fromAwsManagedPolicyName('service-role/AmazonECSTaskExecutionRolePolicy'));
     svc.node.addDependency(this.node.tryFindChild('tryEcsEc2AutoScalingCluster') as ecs.CfnClusterCapacityProviderAssociations);
   }
 }
@@ -81,6 +94,6 @@ const devEnv = {
 
 const app = new App();
 
-new CPDemo(app, 'my-stack-dev-bottlerocket', { env: devEnv, isdefaultvpc: false });
+new CPDemo(app, 'my-stack-dev-bottlerocket', { env: devEnv, isdefaultvpc: true });
 
 app.synth();
