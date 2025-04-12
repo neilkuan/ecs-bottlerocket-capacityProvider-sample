@@ -93,7 +93,7 @@ const devEnv = {
 };
 
 const app = new App();
-
-new CPDemo(app, 'my-stack-dev-bottlerocket', { env: devEnv, isdefaultvpc: true });
+const isdefaultvpc = process.env.GITHUB_ACTIONS === 'true' ? true : false;
+new CPDemo(app, 'my-stack-dev-bottlerocket', { env: devEnv, isdefaultvpc });
 
 app.synth();
