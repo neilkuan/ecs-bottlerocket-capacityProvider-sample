@@ -20,8 +20,8 @@ export class CPDemo extends Stack {
     this.vpc = props?.isdefaultvpc ? ec2.Vpc.fromLookup(this, 'defVpc', { isDefault: true }) : new ec2.Vpc(this, 'newVpc', { natGateways: 1, maxAzs: 3 });
     const vpc = this.vpc;
     const ec2Role = new iam.Role(this, 'InstanceProfile', {
-          assumedBy: new iam.ServicePrincipal('ec2.amazonaws.com'),
-        });
+      assumedBy: new iam.ServicePrincipal('ec2.amazonaws.com'),
+    });
     const autoScalingGroup = new autoscaling.AutoScalingGroup(this, 'ASG', {
       vpc,
       minCapacity: 0,
