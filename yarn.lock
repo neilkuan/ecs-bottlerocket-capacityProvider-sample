@@ -920,16 +920,16 @@
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
 "@types/node@*":
-  version "24.0.10"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-24.0.10.tgz#f65a169779bf0d70203183a1890be7bee8ca2ddb"
-  integrity sha512-ENHwaH+JIRTDIEEbDK6QSQntAYGtbvdDXnMXnZaZ6k13Du1dPMmprkEHIL7ok2Wl2aZevetwTAb5S+7yIF+enA==
+  version "24.0.12"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-24.0.12.tgz#3cf8719572145cfecf4cf9d180d8e7f74a61af00"
+  integrity sha512-LtOrbvDf5ndC9Xi+4QZjVL0woFymF/xSTKZKPgrrl7H7XoeDvnD+E2IclKVDyaK9UM756W/3BXqSU+JEHopA9g==
   dependencies:
     undici-types "~7.8.0"
 
 "@types/node@^20":
-  version "20.19.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.19.4.tgz#c4b8ce51a0f675a354225c58980ccacfe0af5d74"
-  integrity sha512-OP+We5WV8Xnbuvw0zC2m4qfB/BJvjyCwtNjhHdJxV1639SGSKrLmJkc3fMnp2Qy8nJyHp8RO6umxELN/dS1/EA==
+  version "20.19.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.19.6.tgz#cf0bb71776bb061e700b6de68e0e531b5570f6ae"
+  integrity sha512-uYssdp9z5zH5GQ0L4zEJ2ZuavYsJwkozjiUzCRfGtaaQcyjAMJ34aP8idv61QlqTozu6kudyr6JMq9Chf09dfA==
   dependencies:
     undici-types "~6.21.0"
 
